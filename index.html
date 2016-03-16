@@ -1,1 +1,40 @@
-"My Page" 
+<!doctype html>
+<!-- Declares pokemonApp as the starting Angular module -->
+<html class="no-js" ng-app="pokemonApp">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="An example demonstrating Google Map integration with MEAN Apps">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- CSS -->
+    <link rel="stylesheet" href="../Pokemon-GO/node_modules/bootstrap/dist/css/bootstrap.css"/>
+    <!--<link rel="stylesheet" href="style.css"/>-->
+    <!-- JS Source -->
+    <script src="../Pokemon-GO/node_modules/jquery/dist/jquery.js"></script>
+    <script src="../Pokemon-GO/node_modules/angular/angular.js"></script>
+    <script src="../Pokemon-GO/node_modules/angular-route/angular-route.js"></script>
+    <script src="../Pokemon-GO/node_modules/underscore/underscore.js"></script>
+    <!-- Angular Scripts -->
+    <!-- Angular Scripts -->
+    <script src="js/app.js"></script>
+    <script src="js/pokemonList/pokemonListDirective.js"></script>
+    <script src="js/pokemonList/pokemonListController.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <h1 class="text-center">Pokedex</h1>
+    </div>
+    <!-- Map and Side Panel -->
+    <div class="row content">
+        <!-- Side Panel -->
+        <div class="col-md-7">
+            <div class="panel ">
+                <pokemon-list></pokemon-list>
+            </div>
+        </div>
+    </div>
+    <hr/>
+    <!-- Footer -->
+</div>
+</body>
+</html>
